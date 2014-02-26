@@ -7,7 +7,9 @@
     <string name="go_button">GO!</string>
     <string name="action_search">Search</string>
     <string name="title_activity_map">MapActivity</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="textoCiudad">Escoge una ciudad</string>
+    <string name="textoRutas">Escoge un tipo de ruta</string>
+    <string name="textoTiempo">¿De cuánto tiempo dispones?</string>
     <string name="title_activity_info">InfoActivity</string>
     <string name="testing_text">testing</string>
     <string name="madrid_webpage">http://es.wikipedia.org/wiki/Madrid</string>

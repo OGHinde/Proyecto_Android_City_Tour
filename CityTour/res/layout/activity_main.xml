@@ -15,20 +15,38 @@
         android:layout_height="wrap_content"
         android:src="@drawable/madrid" />
     
+    <TextView android:id="@+id/textoCiudad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/madrid"
+        android:text="@string/textoCiudad"/>
+    
     <Spinner android:id="@+id/spinnerCiudades"
     	android:layout_width="match_parent"
     	android:layout_height="wrap_content"
-    	android:layout_below="@id/madrid" />
+    	android:layout_below="@id/textoCiudad" />
+    
+    <TextView android:id="@+id/textoRuta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerCiudades"
+        android:text="@string/textoRutas"/>
     	    
     <Spinner android:id="@+id/spinnerRecorridos"
     	android:layout_width="match_parent"
     	android:layout_height="wrap_content"
-    	android:layout_below="@id/spinnerCiudades" />
+    	android:layout_below="@id/textoRuta" />
+    
+    <TextView android:id="@+id/textoTiempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerRecorridos"
+        android:text="@string/textoTiempo"/>
     
     <Spinner android:id="@+id/spinnerDuraciones"
     	android:layout_width="match_parent"
     	android:layout_height="wrap_content"
-    	android:layout_below="@id/spinnerRecorridos" />
+    	android:layout_below="@id/textoTiempo" />
     
     <Button android:id="@+id/goButton"
         android:layout_width="wrap_content"

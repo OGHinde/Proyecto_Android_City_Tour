@@ -32,14 +32,16 @@ public final class R {
         public static final int madrid=0x7f020003;
     }
     public static final class id {
-        public static final int action_settings=0x7f090007;
-        public static final int botonPreWeb=0x7f090000;
-        public static final int goButton=0x7f090006;
-        public static final int madrid=0x7f090002;
+        public static final int action_settings=0x7f090009;
+        public static final int goButton=0x7f090008;
+        public static final int madrid=0x7f090001;
         public static final int spinnerCiudades=0x7f090003;
-        public static final int spinnerDuraciones=0x7f090005;
-        public static final int spinnerRecorridos=0x7f090004;
-        public static final int webView=0x7f090001;
+        public static final int spinnerDuraciones=0x7f090007;
+        public static final int spinnerRecorridos=0x7f090005;
+        public static final int textoCiudad=0x7f090002;
+        public static final int textoRuta=0x7f090004;
+        public static final int textoTiempo=0x7f090006;
+        public static final int webView=0x7f090000;
     }
     public static final class layout {
         public static final int activity_info=0x7f030000;
@@ -55,17 +57,19 @@ public final class R {
         public static final int action_search=0x7f060004;
         public static final int action_settings=0x7f060001;
         public static final int app_name=0x7f060000;
-        public static final int aver=0x7f06000c;
-        public static final int but=0x7f06000b;
+        public static final int aver=0x7f06000e;
+        public static final int but=0x7f06000d;
         public static final int go_button=0x7f060003;
-        public static final int hello_world=0x7f060006;
         public static final int madrid_pic=0x7f060002;
-        public static final int madrid_webpage=0x7f060009;
-        public static final int pzaEspaña=0x7f06000a;
-        public static final int testing_text=0x7f060008;
-        public static final int title_activity_info=0x7f060007;
+        public static final int madrid_webpage=0x7f06000b;
+        public static final int pzaEspaña=0x7f06000c;
+        public static final int testing_text=0x7f06000a;
+        public static final int textoCiudad=0x7f060006;
+        public static final int textoRutas=0x7f060007;
+        public static final int textoTiempo=0x7f060008;
+        public static final int title_activity_info=0x7f060009;
         public static final int title_activity_map=0x7f060005;
-        public static final int wiki=0x7f06000d;
+        public static final int wiki=0x7f06000f;
     }
     public static final class style {
         /** 
