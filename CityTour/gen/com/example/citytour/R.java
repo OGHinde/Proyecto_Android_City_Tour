@@ -57,19 +57,34 @@ public final class R {
         public static final int action_search=0x7f060004;
         public static final int action_settings=0x7f060001;
         public static final int app_name=0x7f060000;
-        public static final int aver=0x7f06000e;
-        public static final int but=0x7f06000d;
+        public static final int colegiataSanIsidro=0x7f060011;
         public static final int go_button=0x7f060003;
+        public static final int granVia=0x7f060014;
         public static final int madrid_pic=0x7f060002;
         public static final int madrid_webpage=0x7f06000b;
+        public static final int museoArqueologico=0x7f06001d;
+        public static final int museoCaixaForum=0x7f06001a;
+        public static final int museoLazaroGaldiano=0x7f06001b;
+        public static final int museoNaval=0x7f06001e;
+        public static final int museoPrado=0x7f060017;
+        public static final int museoReinaSofia=0x7f060018;
+        public static final int museoSorolla=0x7f06001c;
+        public static final int museoThyssen=0x7f060019;
+        public static final int palacioReal=0x7f06000d;
+        public static final int puertaAlcala=0x7f060013;
+        public static final int puertaDelSol=0x7f06000e;
+        public static final int pzaCibeles=0x7f060015;
+        public static final int pzaDeLaVilla=0x7f060012;
         public static final int pzaEspaña=0x7f06000c;
+        public static final int pzaMayor=0x7f06000f;
+        public static final int pzaOriente=0x7f060016;
+        public static final int temploDebod=0x7f060010;
         public static final int testing_text=0x7f06000a;
         public static final int textoCiudad=0x7f060006;
         public static final int textoRutas=0x7f060007;
         public static final int textoTiempo=0x7f060008;
         public static final int title_activity_info=0x7f060009;
         public static final int title_activity_map=0x7f060005;
-        public static final int wiki=0x7f06000f;
     }
     public static final class style {
         /** 
