@@ -14,6 +14,7 @@ import android.widget.Toast;
 public class MainActivity extends Activity {
 
 	String[] ciudad,recorrido,duracion;
+	int indexCiudad,indexRecorrido,indexDuracion;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -33,12 +34,13 @@ public class MainActivity extends Activity {
 		    @Override
 		    public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
 		        // your code here
-		    	int index = parentView.getSelectedItemPosition();
+		    	indexCiudad = parentView.getSelectedItemPosition();
                 
 	            // storing string resources into Array
 	            ciudad = getResources().getStringArray(R.array.array_ciudades);
 	                    
-	            Toast.makeText(getBaseContext(), "You have selected : " +ciudad[index], Toast.LENGTH_SHORT).show();
+	            //Toast.makeText(getBaseContext(), "You have selected : " +ciudad[indexCiudad], Toast.LENGTH_SHORT).show();
+	            //Toast.makeText(getBaseContext(), "Index Ciudad : " +indexCiudad, Toast.LENGTH_SHORT).show();
 		    }
 
 		    @Override
@@ -61,12 +63,13 @@ public class MainActivity extends Activity {
 		    @Override
 		    public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
 		        // your code here
-		    	int index = parentView.getSelectedItemPosition();
+		    	indexRecorrido = parentView.getSelectedItemPosition();
                 
 	            // storing string resources into Array
 	            recorrido = getResources().getStringArray(R.array.array_recorridos);
 	                    
-	            Toast.makeText(getBaseContext(), "You have selected : " +recorrido[index], Toast.LENGTH_SHORT).show();
+	            //Toast.makeText(getBaseContext(), "You have selected : " +recorrido[indexRecorrido], Toast.LENGTH_SHORT).show();
+	            //Toast.makeText(getBaseContext(), "Index Recorrido : " +indexRecorrido, Toast.LENGTH_SHORT).show();
 		    }
 
 		    @Override
@@ -89,12 +92,13 @@ public class MainActivity extends Activity {
 		    @Override
 		    public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
 		        // your code here
-		    	int index = parentView.getSelectedItemPosition();
+		    	indexDuracion = parentView.getSelectedItemPosition();
                 
 	            // storing string resources into Array
 	            duracion = getResources().getStringArray(R.array.array_duraciones);
 	                    
-	            Toast.makeText(getBaseContext(), "You have selected : " +duracion[index], Toast.LENGTH_SHORT).show();
+	            //Toast.makeText(getBaseContext(), "You have selected : " +duracion[indexDuracion], Toast.LENGTH_SHORT).show();
+	            //Toast.makeText(getBaseContext(), "Index Duracion : " +indexDuracion, Toast.LENGTH_SHORT).show();
 		    }
 
 		    @Override
