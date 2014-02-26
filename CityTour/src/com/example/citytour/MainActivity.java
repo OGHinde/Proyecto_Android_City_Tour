@@ -39,7 +39,7 @@ public class MainActivity extends Activity {
 	            // storing string resources into Array
 	            ciudad = getResources().getStringArray(R.array.array_ciudades);
 	                    
-	            //Toast.makeText(getBaseContext(), "You have selected : " +ciudad[indexCiudad], Toast.LENGTH_SHORT).show();
+	            Toast.makeText(getBaseContext(), "You have selected : " +ciudad[indexCiudad], Toast.LENGTH_SHORT).show();
 	            //Toast.makeText(getBaseContext(), "Index Ciudad : " +indexCiudad, Toast.LENGTH_SHORT).show();
 		    }
 
