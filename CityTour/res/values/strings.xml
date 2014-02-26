@@ -8,5 +8,12 @@
     <string name="action_search">Search</string>
     <string name="title_activity_map">MapActivity</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_info">InfoActivity</string>
+    <string name="testing_text">testing</string>
+    <string name="madrid_webpage">http://es.wikipedia.org/wiki/Madrid</string>
+    <string name="pzaEspaña">http://es.wikipedia.org/wiki/Monumento_a_Miguel_de_Cervantes</string>
+    <string name="but">botoncillo</string>
+    <string name="aver">http://www.it.uc3m.es/personal/directorio.htm</string>
+    <string name="wiki">http://es.m.wikipedia.org/</string>
 
 </resources>
