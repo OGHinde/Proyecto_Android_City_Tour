@@ -32,5 +32,10 @@
     <string name="museoSorolla">http://es.wikipedia.org/wiki/Museo_Sorolla</string>
     <string name="museoArqueologico">http://es.wikipedia.org/wiki/Museo_Arqueológico_Nacional_(España)</string>
     <string name="museoNaval">http://es.wikipedia.org/wiki/Museo_Naval_de_Madrid</string>
+    <string name="posActual">Posición actual:</string>
+    <string name="botonActivar">Activar</string>
+    <string name="botonDesactivar">Desactivar</string>
+    <string name="estadoProveedor">Estado del proveedor:</string>
+    <string name="latitude">1</string>
         
 </resources>
