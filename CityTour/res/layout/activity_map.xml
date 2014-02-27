@@ -1,16 +1,57 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MapActivity" >
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
-
-</RelativeLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <TextView android:id="@+id/LblPosicion"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:layout_margin="5dip"
+	    android:text="@string/posActual" />
+    
+	<TextView android:id="@+id/LblPosLatitud"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:layout_margin="5dip" 
+	    android:background="#aaaaaa" 
+	    android:textColor="#000000" />
+	    
+	<TextView android:id="@+id/LblPosLongitud"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:layout_margin="5dip"
+	    android:background="#aaaaaa" 
+	    android:textColor="#000000" />
+	    
+	<TextView android:id="@+id/LblPosPrecision"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:layout_margin="5dip"
+	    android:background="#aaaaaa" 
+	    android:textColor="#000000" />
+	    
+	<Button android:id="@+id/BtnActualizar" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:text="@string/botonActivar" />
+		
+	<Button android:id="@+id/BtnDesactivar" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:text="@string/botonDesactivar" />
+		
+	<TextView android:id="@+id/LblEst"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:layout_margin="5dip"
+	    android:text="@string/estadoProveedor" />
+	    
+	<TextView android:id="@+id/LblEstado"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:layout_margin="5dip" 
+	    android:background="#aaaaaa" 
+	    android:textColor="#000000" />
+	
+</LinearLayout>
