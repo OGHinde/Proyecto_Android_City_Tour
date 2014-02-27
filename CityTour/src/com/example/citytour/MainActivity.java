@@ -1,7 +1,5 @@
 package com.example.citytour;
 
-import java.util.List;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.location.Criteria;
@@ -24,6 +22,7 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
 		// Spinner de las ciudades
 		Spinner spinnerCiudades = (Spinner) findViewById(R.id.spinnerCiudades);
 		// Create an ArrayAdapter using the string array and a default spinner layout
@@ -110,7 +109,7 @@ public class MainActivity extends Activity {
 		    }
 
 		});
-		//setupLocationManager();
+		// setupLocationManager();
 	}
 
 	@Override
@@ -120,19 +119,16 @@ public class MainActivity extends Activity {
 		return true;
 	}
 	
-	
-
-	public void showMadridPage(View view){	
+	public void showPzaEspañaPage(View view){
 		Intent intent = new Intent(this, InfoActivity.class);
-		String url = getString(R.string.madrid_webpage);
+		String url = getString(R.string.pzaEspaña);
 		intent.putExtra("url", url);
 		startActivity(intent);
 	}
 	
-	
-	public void showPzaEspañaPage(View view){
+	public void showMuseoReinaSofiaPage(View view){
 		Intent intent = new Intent(this, InfoActivity.class);
-		String url = getString(R.string.pzaEspaña);
+		String url = getString(R.string.museoReinaSofia);
 		intent.putExtra("url", url);
 		startActivity(intent);
 	}
@@ -145,9 +141,9 @@ public class MainActivity extends Activity {
 		// Location manager
 		LocationManager locManager = (LocationManager)getSystemService(LOCATION_SERVICE);
 		//Mejor proveedor por criterio
-		String mejorProviderCrit = locManager.getBestProvider(req, false);
+		// String mejorProviderCrit = locManager.getBestProvider(req, false);
 		//Lista de proveedores por criterio
-		List<String> listaProvidersCrit = locManager.getProviders(req, false);
+		// List<String> listaProvidersCrit = locManager.getProviders(req, false);
 		//Si el GPS no está habilitado
 		if (!locManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
 		     mostrarAvisoGpsDeshabilitado();
@@ -156,5 +152,12 @@ public class MainActivity extends Activity {
 	
 	public void mostrarAvisoGpsDeshabilitado(){
 		Toast.makeText(getBaseContext(), R.string.GPSdeshabilitado, Toast.LENGTH_SHORT).show();
+	}
+	
+	public void goToMap(){
+		Intent intent = new Intent(this, MapActivity.class);
+		String latitude = getString(R.string.latitude);
+		intent.putExtra("latitude", latitude);
+		startActivity(intent);
 	}
 }

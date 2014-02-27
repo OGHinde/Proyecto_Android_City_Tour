@@ -34,18 +34,18 @@
 	<Button android:id="@+id/BtnActualizar" 
 		android:layout_width="fill_parent" 
 		android:layout_height="wrap_content"
-		android:text="Activar" />
+		android:text="@string/botonActivar" />
 		
 	<Button android:id="@+id/BtnDesactivar" 
 		android:layout_width="fill_parent" 
 		android:layout_height="wrap_content"
-		android:text="Desactivar" />
+		android:text="@string/botonDesactivar" />
 		
 	<TextView android:id="@+id/LblEst"
 	    android:layout_width="fill_parent" 
 	    android:layout_height="wrap_content" 
 	    android:layout_margin="5dip"
-	    android:text="Estado proveedor:" />
+	    android:text="@string/estadoProveedor" />
 	    
 	<TextView android:id="@+id/LblEstado"
 	    android:layout_width="fill_parent" 

@@ -34,5 +34,9 @@
     <string name="museoArqueologico">http://en.wikipedia.org/wiki/National_Archaeological_Museum_of_Spain</string>
     <string name="museoNaval">http://en.wikipedia.org/wiki/Museo_Naval_de_Madrid</string>
     <string name="posActual">Posición actual:</string>
+    <string name="botonActivar">Activar</string>
+    <string name="botonDesactivar">Desactivar</string>
+    <string name="estadoProveedor">Estado del proveedor:</string>
+    <string name="latitude">1</string>
         
 </resources>
