@@ -33,7 +33,15 @@ public final class R {
         public static final int madrid=0x7f020003;
     }
     public static final class id {
-        public static final int action_settings=0x7f090009;
+        public static final int BtnActualizar=0x7f09000d;
+        public static final int BtnDesactivar=0x7f09000e;
+        public static final int LblEst=0x7f09000f;
+        public static final int LblEstado=0x7f090010;
+        public static final int LblPosLatitud=0x7f09000a;
+        public static final int LblPosLongitud=0x7f09000b;
+        public static final int LblPosPrecision=0x7f09000c;
+        public static final int LblPosicion=0x7f090009;
+        public static final int action_settings=0x7f090011;
         public static final int goButton=0x7f090008;
         public static final int madrid=0x7f090001;
         public static final int spinnerCiudades=0x7f090003;
@@ -55,6 +63,7 @@ public final class R {
         public static final int map=0x7f080002;
     }
     public static final class string {
+        public static final int GPSdeshabilitado=0x7f06001f;
         public static final int action_search=0x7f060004;
         public static final int action_settings=0x7f060001;
         public static final int app_name=0x7f060000;
@@ -72,6 +81,7 @@ public final class R {
         public static final int museoSorolla=0x7f06001c;
         public static final int museoThyssen=0x7f060019;
         public static final int palacioReal=0x7f06000d;
+        public static final int posActual=0x7f060020;
         public static final int puertaAlcala=0x7f060013;
         public static final int puertaDelSol=0x7f06000e;
         public static final int pzaCibeles=0x7f060015;

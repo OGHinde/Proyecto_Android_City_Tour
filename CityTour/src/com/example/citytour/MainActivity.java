@@ -1,7 +1,11 @@
 package com.example.citytour;
 
+import java.util.List;
+
 import android.app.Activity;
 import android.content.Intent;
+import android.location.Criteria;
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -20,7 +24,6 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
 		// Spinner de las ciudades
 		Spinner spinnerCiudades = (Spinner) findViewById(R.id.spinnerCiudades);
 		// Create an ArrayAdapter using the string array and a default spinner layout
@@ -107,6 +110,7 @@ public class MainActivity extends Activity {
 		    }
 
 		});
+		//setupLocationManager();
 	}
 
 	@Override
@@ -133,4 +137,24 @@ public class MainActivity extends Activity {
 		startActivity(intent);
 	}
 
+	public void setupLocationManager(){
+		// Criteria
+		Criteria req = new Criteria();
+		req.setAccuracy(Criteria.ACCURACY_FINE);
+		req.setAltitudeRequired(true);		
+		// Location manager
+		LocationManager locManager = (LocationManager)getSystemService(LOCATION_SERVICE);
+		//Mejor proveedor por criterio
+		String mejorProviderCrit = locManager.getBestProvider(req, false);
+		//Lista de proveedores por criterio
+		List<String> listaProvidersCrit = locManager.getProviders(req, false);
+		//Si el GPS no está habilitado
+		if (!locManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
+		     mostrarAvisoGpsDeshabilitado();
+		}
+	}
+	
+	public void mostrarAvisoGpsDeshabilitado(){
+		Toast.makeText(getBaseContext(), R.string.GPSdeshabilitado, Toast.LENGTH_SHORT).show();
+	}
 }
